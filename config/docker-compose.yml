@@ -1,0 +1,88 @@
+# Локальное окружение разработки HammerLive
+services:
+  postgres:
+    image: postgres:16
+    env_file: .env
+    ports: ["5432:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+  redis:
+    image: redis:7
+    ports: ["6379:6379"]
+  rabbitmq:
+    image: rabbitmq:3.13-management
+    ports: ["5672:5672", "15672:15672"]
+
+  api-gateway:
+    build: ../src/services/api-gateway
+    env_file: .env
+    depends_on: [postgres, redis, rabbitmq]
+    ports: ["8080:8080"]
+
+  auction-session:
+    build: ../src/services/auction-session
+    env_file: .env
+    depends_on: [postgres, redis, rabbitmq]
+    ports: ["8101:8101"]
+
+  auctioneer-capture:
+    build: ../src/services/auctioneer-capture
+    env_file: .env
+    depends_on: [postgres, redis, rabbitmq]
+    ports: ["8102:8102"]
+
+  bid-capture:
+    build: ../src/services/bid-capture
+    env_file: .env
+    depends_on: [postgres, redis, rabbitmq]
+    ports: ["8103:8103"]
+
+  bid-tracker:
+    build: ../src/services/bid-tracker
+    env_file: .env
+    depends_on: [postgres, redis, rabbitmq]
+    ports: ["8104:8104"]
+
+  bid-streamer:
+    build: ../src/services/bid-streamer
+    env_file: .env
+    depends_on: [postgres, redis, rabbitmq]
+    ports: ["8105:8105"]
+
+  video-capture:
+    build: ../src/services/video-capture
+    env_file: .env
+    depends_on: [postgres, redis, rabbitmq]
+    ports: ["8106:8106"]
+
+  video-streamer:
+    build: ../src/services/video-streamer
+    env_file: .env
+    depends_on: [postgres, redis, rabbitmq]
+    ports: ["8107:8107"]
+
+  payment:
+    build: ../src/services/payment
+    env_file: .env
+    depends_on: [postgres, redis, rabbitmq]
+    ports: ["8108:8108"]
+
+  identity:
+    build: ../src/services/identity
+    env_file: .env
+    depends_on: [postgres, redis, rabbitmq]
+    ports: ["8109:8109"]
+
+  reputation:
+    build: ../src/services/reputation
+    env_file: .env
+    depends_on: [postgres, redis, rabbitmq]
+    ports: ["8110:8110"]
+
+  notification:
+    build: ../src/services/notification
+    env_file: .env
+    depends_on: [postgres, redis, rabbitmq]
+    ports: ["8111:8111"]
+
+volumes:
+  pgdata:
