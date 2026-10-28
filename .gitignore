@@ -1,0 +1,39 @@
+# --- Python (микросервисы, FastAPI) ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.env
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Node.js / TypeScript (веб-клиент) ---
+node_modules/
+src/web-client/dist/
+npm-debug.log*
+yarn-error.log*
+.pnpm-store/
+*.tsbuildinfo
+
+# --- Docker / Kubernetes ---
+config/.env
+docker-compose.override.yml
+*.secret.yaml
+
+# --- IDE и ОС ---
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- Временные файлы офисных документов ---
+~$*
+*.tmp
