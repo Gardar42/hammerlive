@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: HammerLive — API подсистемы торгов
-  version: 1.0.0
+  version: 1.1.0
   description: >
     Взаимодействие веб-клиента с подсистемой торгов через API Gateway.
     Команды принимает BidCapture и помещает в очередь, проверку выполняет
@@ -9,6 +9,8 @@ info:
     (bid.accepted / bid.rejected) приходит событием по WebSocket
     /ws/lots/{lotId}, который обслуживает BidStreamer. Запросы состояния лота
     обслуживает BidStreamer, история ставок читается из реплики журнала BidTracker.
+    Изменения 1.1: заочные ставки (FB-1), подтверждение крупных ставок
+    одноразовым кодом (FB-2), подключение Telegram-уведомлений (FB-4).
 servers:
   - url: https://api.hammerlive.by/v1
 security:
@@ -41,6 +43,7 @@ paths:
       parameters:
         - $ref: '#/components/parameters/LotId'
         - $ref: '#/components/parameters/IdempotencyKey'
+        - { name: X-Step-Up-Token, in: header, required: false, schema: { type: string }, description: '(1.1, FB-2) обязателен, если сумма выше порога подтверждения' }
       requestBody:
         required: true
         content:
@@ -54,6 +57,7 @@ paths:
               schema: { $ref: '#/components/schemas/BidPending' }
         '400': { $ref: '#/components/responses/Problem' }
         '401': { $ref: '#/components/responses/Problem' }
+        '403': { $ref: '#/components/responses/Problem' }
         '404': { $ref: '#/components/responses/Problem' }
         '429': { $ref: '#/components/responses/Problem' }
         '503': { $ref: '#/components/responses/Problem' }
@@ -85,6 +89,69 @@ paths:
       parameters: [ { $ref: '#/components/parameters/LotId' } ]
       responses:
         '204': { description: Автоставка отключена }
+  /lots/{lotId}/absentee-bids:
+    post:
+      summary: (1.1, FB-1) Оставить заочную ставку до открытия лота (BidCapture → BidTracker)
+      parameters:
+        - $ref: '#/components/parameters/LotId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [maxAmount]
+              properties: { maxAmount: { type: number } }
+      responses:
+        '202': { description: 'Заочная ставка принята к обработке; отказ придёт событием bid.rejected' }
+        '400': { $ref: '#/components/responses/Problem' }
+    delete:
+      summary: (1.1, FB-1) Отменить заочную ставку (только до открытия лота)
+      parameters: [ { $ref: '#/components/parameters/LotId' } ]
+      responses:
+        '202': { description: Отмена принята к обработке }
+  /auth/step-up:
+    post:
+      summary: (1.1, FB-2) Подтвердить крупную ставку одноразовым кодом (Identity)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [challengeId, code]
+              properties:
+                challengeId: { type: string, format: uuid }
+                code: { type: string, pattern: '^[0-9]{6}$' }
+      responses:
+        '200':
+          description: 'Код верен, выдан токен подтверждения на 60 секунд'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: { stepUpToken: { type: string }, expiresIn: { type: integer, example: 60 } }
+        '401': { $ref: '#/components/responses/Problem' }
+        '429': { $ref: '#/components/responses/Problem' }
+  /users/me/notification-channels/telegram:
+    put:
+      summary: (1.1, FB-4) Привязать Telegram-аккаунт по коду из бота (Notification)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [linkCode]
+              properties: { linkCode: { type: string } }
+      responses:
+        '200': { description: Канал Telegram подключён }
+        '400': { $ref: '#/components/responses/Problem' }
+    delete:
+      summary: (1.1, FB-4) Отключить уведомления в Telegram
+      responses:
+        '204': { description: Канал отключён }
 components:
   securitySchemes:
     bearerAuth: { type: http, scheme: bearer, bearerFormat: JWT }
@@ -137,7 +204,7 @@ components:
         lotId: { type: integer }
         code:
           type: string
-          enum: [NOT_REGISTERED, SELLER_CANNOT_BID, BID_TOO_LOW, LOT_CLOSED, NOT_MULTIPLE_OF_STEP, LIMIT_EXCEEDED]
+          enum: [NOT_REGISTERED, SELLER_CANNOT_BID, BID_TOO_LOW, LOT_CLOSED, NOT_MULTIPLE_OF_STEP, LIMIT_EXCEEDED, ABSENTEE_NOT_ALLOWED]
         detail: { type: string }
         currentPrice: { type: number }
         version: { type: integer }
@@ -150,5 +217,6 @@ components:
         status: { type: integer }
         code:
           type: string
-          enum: [VALIDATION_ERROR, UNAUTHORIZED, LOT_NOT_FOUND, TOO_MANY_REQUESTS, SERVICE_UNAVAILABLE, REGISTRATION_DENIED, ALREADY_REGISTERED]
+          enum: [VALIDATION_ERROR, UNAUTHORIZED, LOT_NOT_FOUND, TOO_MANY_REQUESTS, SERVICE_UNAVAILABLE, REGISTRATION_DENIED, ALREADY_REGISTERED, STEP_UP_REQUIRED, INVALID_OTP]
         detail: { type: string }
+        challengeId: { type: string, format: uuid, description: '(1.1) возвращается вместе с STEP_UP_REQUIRED' }
