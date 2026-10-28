@@ -1,5 +1,5 @@
 """Логическая ER-модель HammerLive по базам сервисов (SVG, нотация «вороньей лапки»)."""
-W, H = 1720, 1640
+W, H = 1720, 1700
 o = []
 a = o.append
 SANS = 'font-family="Liberation Sans, Arial, sans-serif"'
@@ -101,7 +101,7 @@ one(px, py, 1); many(1325, cy, -1)
 
 # ================= row 2 =================
 R2 = 545
-cluster(20, R2, 1210, 520, 'BidTracker – Журнал ставок', 'PostgreSQL')
+cluster(20, R2, 1210, 580, 'BidTracker – Журнал ставок (v1.1)', 'PostgreSQL')
 table('lot_rules', 47, R2 + 60, [('lot_id','bigint','PK'),('auction_id','bigint',''),('start_price','numeric(12,2)',''),('bid_step','numeric(12,2)',''),('closes_at','timestamptz',''),('status','varchar(20)','')])
 table('participants', 47, R2 + 320, [('auction_id','bigint','PK'),('user_id','bigint','PK'),('participant_no','integer',''),('bid_limit','numeric(12,2)','')])
 table('bids', 455, R2 + 60, [('bid_id','bigint','PK'),('lot_id','bigint','FK'),('user_id','bigint','REF'),('source','varchar(10)',''),('amount','numeric(12,2)',''),('server_ts','timestamptz(6)',''),('status','varchar(20)','')])
@@ -111,16 +111,22 @@ rel('lot_rules', 'lot_id', 'bids', 'lot_id', 425)
 px = 47 + TWW; py = row_y('lot_rules', 'lot_id'); cy = row_y('auto_bids', 'lot_id')
 a(f'<path d="M{px} {py} L410 {py} L410 {R2+330} L835 {R2+330} L835 {cy} L863 {cy}" fill="none" stroke="#000" stroke-width="1.8"/>')
 one(px, py, 1); many(863, cy, -1)
+table('absentee_bids', 863, R2 + 345, [('absentee_bid_id','bigint','PK'),('lot_id','bigint','FK'),('user_id','bigint','REF'),('max_amount','numeric(12,2)',''),('status','varchar(20)','')])
+cy2 = row_y('absentee_bids', 'lot_id')
+a(f'<path d="M835 {R2+330} L835 {cy2} L863 {cy2}" fill="none" stroke="#000" stroke-width="1.8"/>')
+many(863, cy2, -1)
 
-cluster(1255, R2, 445, 520, 'BidStreamer – Кэш потока', 'Redis (ключ-значение)')
+cluster(1255, R2, 445, 580, 'BidStreamer – Кэш потока', 'Redis (ключ-значение)')
 table('lot:{id}:state', 1305, R2 + 60, [('current_price','decimal',''),('leader_no','int',''),('bids_count','int',''),('closes_at','timestamp',''),('version','int','')], kv='HASH')
 table('lot:{id}:last_bids', 1305, R2 + 320, [('amount','decimal',''),('participant_no','int',''),('ts','timestamp','')], kv='LIST')
 
 # ================= row 3 =================
-R3 = 1125
+R3 = 1185
 cluster(20, R3, 400, 300, 'Reputation (вспомогательный)', 'PostgreSQL')
 table('reviews', 47, R3 + 60, [('review_id','bigint','PK'),('lot_id','bigint','REF'),('author_id','bigint','REF'),('target_id','bigint','REF'),('rating','smallint',''),('text','text','')])
-cluster(445, R3, 1255, 420, 'Payment – БД платежей', 'PostgreSQL')
+cluster(445, R3, 820, 420, 'Payment – БД платежей', 'PostgreSQL')
+cluster(1290, R3, 410, 300, 'Notification (v1.1)', 'PostgreSQL')
+table('notification_channels', 1322, R3 + 60, [('channel_id','bigint','PK'),('user_id','bigint','REF'),('type','varchar(20)',''),('external_id','varchar(64)',''),('enabled','boolean','')])
 table('lot_results', 470, R3 + 60, [('lot_id','bigint','PK'),('winner_id','bigint','REF'),('winning_bid_id','bigint','REF'),('final_price','numeric(12,2)','')])
 table('payment_methods', 470, R3 + 250, [('card_id','bigint','PK'),('user_id','bigint','REF'),('provider_token','varchar(128)',''),('card_mask','varchar(19)','')])
 table('payments', 895, R3 + 60, [('payment_id','bigint','PK'),('lot_id','bigint','FK'),('card_id','bigint','FK'),('amount','numeric(12,2)',''),('commission','numeric(12,2)',''),('status','varchar(20)',''),('provider_txn_id','varchar(64)','')])
@@ -131,12 +137,12 @@ rel('payment_methods', 'card_id', 'payments', 'card_id', 870)
 ref([(300, R2), (300, 500), (690, 500), (690, 487)], 'lot_id, auction_id: копия правил лота', 312, 528)
 ref([(1255, R2 + 200), (1232, R2 + 200)], '', 0, 0)
 text(1243, R2 + 178, 'lot_id', 15, italic=True, anchor='middle', fill='#222')
-ref([(640, R3), (640, 1067)], 'winning_bid_id', 652, R3 - 22)
+ref([(640, R3), (640, R2 + 582)], 'winning_bid_id', 652, R3 - 22)
 ref([(420, R3 + 200), (443, R3 + 200)], '', 0, 0)
 text(432, R3 + 178, 'lot_id', 15, italic=True, anchor='middle', fill='#222')
 
 # ================= legend =================
-LY = 1590
+LY = 1650
 a(f'<line x1="30" y1="{LY-6}" x2="90" y2="{LY-6}" stroke="#000" stroke-width="1.8"/>')
 one(30, LY - 6, 1); many(90, LY - 6, -1)
 text(105, LY, '1 : N внутри базы сервиса (FK)', 16)

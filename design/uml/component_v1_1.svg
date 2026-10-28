@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="790" viewBox="0 0 1400 790">
+<rect width="1400" height="790" fill="#fff"/>
+<rect x="8" y="8" width="1384" height="774" fill="none" stroke="#000" stroke-width="2"/>
+<path d="M8 8 L580 8 L580 78 L556 102 L8 102" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="24" y="46" font-family="Liberation Sans, Arial, sans-serif" font-size="25" font-weight="bold">Диаграмма компонентов ИС HammerLive</text>
+<text x="24" y="80" font-family="Liberation Sans, Arial, sans-serif" font-size="25" font-weight="bold">изменения версии 1.1 (фрагмент)</text>
+<rect x="70" y="170" width="260" height="96" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="283" y="180" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="278" y="183" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="278" y="192" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="200.0" y="227.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">API Gateway</text>
+<rect x="520" y="170" width="300" height="96" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="773" y="180" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="768" y="183" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="768" y="192" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="670.0" y="213.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">BidCapture</text>
+<text x="670.0" y="242.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">«изменён»</text>
+<rect x="1000" y="170" width="360" height="96" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="1313" y="180" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1308" y="183" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1308" y="192" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="1180.0" y="213.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">Identity</text>
+<text x="1180.0" y="242.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">«изменён»</text>
+<rect x="536" y="416" width="300" height="110" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="528" y="408" width="300" height="110" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="520" y="400" width="300" height="110" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="773" y="410" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="768" y="413" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="768" y="422" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="670.0" y="450.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">BidTracker</text>
+<text x="670.0" y="479.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">[шард по lotId]</text>
+<rect x="1000" y="400" width="360" height="96" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="1313" y="410" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1308" y="413" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1308" y="422" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="1180.0" y="443.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">Notification</text>
+<text x="1180.0" y="472.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">«изменён»</text>
+<rect x="1000" y="620" width="360" height="96" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="1313" y="630" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1308" y="633" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1308" y="642" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="1180.0" y="663.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">TelegramAdapter</text>
+<text x="1180.0" y="692.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">«новый»</text>
+<rect x="520" y="620" width="300" height="96" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="773" y="630" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="768" y="633" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="768" y="642" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="670.0" y="663.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">Telegram</text>
+<text x="670.0" y="692.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">Bot API</text>
+<rect x="319.0" y="207.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="509.0" y="207.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M509.0 218 L425 218" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="425" cy="218" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M425 205 A13 13 0 0 0 425 231" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M412 218 L341.0 218" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="425" y="196" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="middle">IBids, IAbsenteeBids</text>
+<rect x="189.0" y="159.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="1139.0" y="159.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M1150 159.0 L1150 130 L900 130" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="900" cy="130" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M900 117 A13 13 0 0 0 900 143" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M887 130 L200 130 L200 159.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="900" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="middle">IStepUp</text>
+<rect x="809.0" y="207.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="989.0" y="207.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M989.0 218 L910 218" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="910" cy="218" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M910 205 A13 13 0 0 0 910 231" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M897 218 L831.0 218" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="910" y="196" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="middle">IStepUpVerify</text>
+<rect x="659.0" y="255.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="659.0" y="389.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M670 389.0 L670 333" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="670" cy="333" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M657 333 A13 13 0 0 1 683 333" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M670 320 L670 277.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="690" y="339" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="start">IBidQueue (маршрут по lotId)</text>
+<rect x="809.0" y="437.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="989.0" y="437.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M989.0 448 L910 448" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="910" cy="448" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M910 435 A13 13 0 0 0 910 461" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M897 448 L831.0 448" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="910" y="426" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="middle">ILotEvents</text>
+<rect x="1139.0" y="485.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="1139.0" y="609.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M1150 609.0 L1150 558" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="1150" cy="558" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M1137 558 A13 13 0 0 1 1163 558" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M1150 545 L1150 507.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="1170" y="564" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="start">INotificationChannel</text>
+<rect x="989.0" y="657.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="809.0" y="657.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M831.0 668 L910 668" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="910" cy="668" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M910 655 A13 13 0 0 1 910 681" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M923 668 L989.0 668" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="910" y="646" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="middle">ITelegramBotAPI</text>
+</svg>

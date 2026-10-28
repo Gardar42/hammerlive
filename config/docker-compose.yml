@@ -84,5 +84,11 @@ services:
     depends_on: [postgres, redis, rabbitmq]
     ports: ["8111:8111"]
 
+  telegram-adapter:
+    build: ../src/services/telegram-adapter
+    env_file: .env
+    depends_on: [postgres, redis, rabbitmq]
+    ports: ["8112:8112"]
+
 volumes:
   pgdata:
