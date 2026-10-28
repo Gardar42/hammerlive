@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1390" viewBox="0 0 1400 1390">
+<rect width="1400" height="1390" fill="#fff"/>
+<rect x="8" y="8" width="1384" height="1374" fill="none" stroke="#000" stroke-width="2"/>
+<path d="M8 8 L360 8 L360 78 L336 102 L8 102" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="24" y="46" font-family="Liberation Sans, Arial, sans-serif" font-size="25" font-weight="bold">Диаграмма компонентов</text>
+<text x="24" y="80" font-family="Liberation Sans, Arial, sans-serif" font-size="25" font-weight="bold">ИС HammerLive</text>
+<rect x="70" y="150" width="290" height="92" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="313" y="160" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="308" y="163" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="308" y="172" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="215.0" y="205.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">БД сеансов</text>
+<rect x="420" y="150" width="250" height="92" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="623" y="160" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="618" y="163" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="618" y="172" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="545.0" y="191.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">Клиент</text>
+<text x="545.0" y="220.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">участника</text>
+<rect x="690" y="150" width="250" height="92" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="893" y="160" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="888" y="163" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="888" y="172" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="815.0" y="191.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">Пульт</text>
+<text x="815.0" y="220.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">аукциониста</text>
+<rect x="970" y="150" width="320" height="92" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="1243" y="160" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1238" y="163" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1238" y="172" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="1130.0" y="191.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">Кэш потока</text>
+<text x="1130.0" y="220.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">ставок</text>
+<rect x="590" y="360" width="170" height="492" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="713" y="370" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="708" y="373" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="708" y="382" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="675.0" y="601.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">API</text>
+<text x="675.0" y="630.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">Gateway</text>
+<rect x="70" y="380" width="330" height="92" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="353" y="390" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="348" y="393" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="348" y="402" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="235.0" y="435.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">AuctionSession</text>
+<rect x="70" y="560" width="330" height="92" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="353" y="570" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="348" y="573" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="348" y="582" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="235.0" y="615.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">AuctioneerCapture</text>
+<rect x="70" y="740" width="330" height="92" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="353" y="750" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="348" y="753" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="348" y="762" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="235.0" y="795.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">BidCapture</text>
+<rect x="950" y="380" width="340" height="92" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="1243" y="390" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1238" y="393" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1238" y="402" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="1120.0" y="435.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">BidStreamer</text>
+<rect x="950" y="560" width="340" height="92" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="1243" y="570" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1238" y="573" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1238" y="582" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="1120.0" y="615.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">VideoStreamer</text>
+<rect x="950" y="740" width="340" height="92" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="1243" y="750" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1238" y="753" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1238" y="762" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="1120.0" y="795.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">VideoCapture</text>
+<rect x="70" y="1010" width="330" height="110" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="353" y="1020" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="348" y="1023" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="348" y="1032" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="235.0" y="1074.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">BidTracker</text>
+<rect x="90" y="1230" width="290" height="92" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="333" y="1240" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="328" y="1243" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="328" y="1252" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="235.0" y="1285.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">Журнал ставок</text>
+<rect x="560" y="1010" width="250" height="92" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="763" y="1020" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="758" y="1023" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="758" y="1032" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="685.0" y="1065.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">Payment</text>
+<rect x="560" y="1230" width="250" height="92" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="763" y="1240" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="758" y="1243" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="758" y="1252" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="685.0" y="1285.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">БД платежей</text>
+<rect x="970" y="1010" width="320" height="92" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="1243" y="1020" width="22" height="20" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1238" y="1023" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1238" y="1032" width="11" height="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<text x="1130.0" y="1051.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">Платёжный</text>
+<text x="1130.0" y="1080.0" font-family="Liberation Mono, Consolas, monospace" font-size="25" text-anchor="middle">провайдер</text>
+<rect x="549.0" y="231.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="609.0" y="349.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M620 349.0 L620 305" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="620" cy="305" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M607 305 A13 13 0 0 1 633 305" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M620 292 L620 285 L560 285 L560 253.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="606" y="311" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="end">IClientAPI</text>
+<rect x="819.0" y="231.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="669.0" y="349.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M680 349.0 L680 305" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="680" cy="305" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M667 305 A13 13 0 0 1 693 305" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M680 292 L680 285 L830 285 L830 253.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="694" y="311" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="start">IAuctioneerAPI</text>
+<rect x="389.0" y="415.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="579.0" y="415.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M411.0 426.0 L500 426.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="500" cy="426.0" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M500 413.0 A13 13 0 0 1 500 439.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M513 426.0 L579.0 426.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="500" y="406.0" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="middle">ISessionAPI</text>
+<rect x="389.0" y="595.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="579.0" y="595.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M411.0 606.0 L500 606.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="500" cy="606.0" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M500 593.0 A13 13 0 0 1 500 619.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M513 606.0 L579.0 606.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="500" y="586.0" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="middle">IAuctioneerBids</text>
+<rect x="389.0" y="775.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="579.0" y="775.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M411.0 786.0 L500 786.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="500" cy="786.0" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M500 773.0 A13 13 0 0 1 500 799.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M513 786.0 L579.0 786.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="500" y="766.0" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="middle">IBids</text>
+<rect x="939.0" y="415.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="749.0" y="415.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M939.0 426.0 L850 426.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="850" cy="426.0" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M850 413.0 A13 13 0 0 0 850 439.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M837 426.0 L771.0 426.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="850" y="406.0" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="middle">IBidStream</text>
+<rect x="939.0" y="595.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="749.0" y="595.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M939.0 606.0 L850 606.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="850" cy="606.0" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M850 593.0 A13 13 0 0 0 850 619.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M837 606.0 L771.0 606.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="850" y="586.0" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="middle">IVideoStream</text>
+<rect x="939.0" y="775.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="749.0" y="775.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M939.0 786.0 L850 786.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="850" cy="786.0" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M850 773.0 A13 13 0 0 0 850 799.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M837 786.0 L771.0 786.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="850" y="766.0" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="middle">IVideoIngest</text>
+<rect x="199.0" y="231.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="199.0" y="369.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M210 253.0 L210 312" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="210" cy="312" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M197 312 A13 13 0 0 0 223 312" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M210 325 L210 369.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="228" y="318" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="start">ISessionDB</text>
+<rect x="1109.0" y="231.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="1109.0" y="369.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M1120 253.0 L1120 312" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="1120" cy="312" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M1107 312 A13 13 0 0 0 1133 312" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M1120 325 L1120 369.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="1138" y="318" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="start">IStreamCache</text>
+<rect x="1109.0" y="641.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="1109.0" y="729.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M1120 663.0 L1120 696.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="1120" cy="696.0" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M1107 696.0 A13 13 0 0 0 1133 696.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M1120 709.0 L1120 729.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="1138" y="702.0" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="start">IVideoFeed</text>
+<rect x="59.0" y="775.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="309.0" y="999.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M320 999.0 L320 895 L206.0 895" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="206.0" cy="895" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M206.0 882 A13 13 0 0 0 206.0 908" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M193.0 895 L52 895 L52 786.0 L59.0 786.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="206.0" y="879" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="middle">IBidQueue</text>
+<rect x="59.0" y="595.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="219.0" y="999.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M230 999.0 L230 935 L154.0 935" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="154.0" cy="935" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M154.0 922 A13 13 0 0 0 154.0 948" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M141.0 935 L38 935 L38 606.0 L59.0 606.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="154.0" y="919" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="middle">IAuctioneerBidQueue</text>
+<rect x="59.0" y="415.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="129.0" y="999.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M140 999.0 L140 975 L102.0 975" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="102.0" cy="975" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M102.0 962 A13 13 0 0 0 102.0 988" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M89.0 975 L24 975 L24 426.0 L59.0 426.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="102.0" y="959" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="middle">ISessionEvents</text>
+<rect x="224.0" y="1109.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="224.0" y="1219.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M235 1219.0 L235 1175" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="235" cy="1175" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M222 1175 A13 13 0 0 1 248 1175" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M235 1162 L235 1131.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="253" y="1181" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="start">IBidLog</text>
+<rect x="389.0" y="1069.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="549.0" y="1069.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M549.0 1080 L500 1080" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="500" cy="1080" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M500 1067 A13 13 0 0 0 500 1093" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M487 1080 L411.0 1080" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="500" y="1060" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="middle">ILotResults</text>
+<rect x="389.0" y="1025.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="1279.0" y="437.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M1301.0 448.0 L1340 448.0 L1340 900" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="1340" cy="900" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M1327 900 A13 13 0 0 0 1353 900" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M1340 913 L1340 960 L430 960 L430 1036 L411.0 1036" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="1322" y="906" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="end">IAcceptedBids</text>
+<rect x="674.0" y="1091.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="674.0" y="1219.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M685 1219.0 L685 1166" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="685" cy="1166" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M672 1166 A13 13 0 0 1 698 1166" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M685 1153 L685 1113.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="703" y="1172" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="start">IPaymentDB</text>
+<rect x="799.0" y="1045.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="959.0" y="1045.0" width="22" height="22" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M959.0 1056 L890 1056" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="890" cy="1056" r="7" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M890 1043 A13 13 0 0 0 890 1069" fill="none" stroke="#000" stroke-width="1.8"/>
+<path d="M877 1056 L821.0 1056" fill="none" stroke="#000" stroke-width="1.8"/>
+<text x="890" y="1036" font-family="Liberation Sans, Arial, sans-serif" font-size="18" text-anchor="middle">IPaymentGateway</text>
+</svg>

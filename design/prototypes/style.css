@@ -1,0 +1,9 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Liberation Sans",Arial,sans-serif;color:#222;background:#fff}
+.box{border:2px solid #555;border-radius:6px;background:#fff;position:relative}
+.ph{background:repeating-linear-gradient(45deg,#eee,#eee 10px,#e2e2e2 10px,#e2e2e2 20px);border:2px solid #777;display:flex;align-items:center;justify-content:center;color:#666;font-size:22px;position:relative}
+.btn{border:2px solid #333;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:bold;background:#fff}
+.btn.pri{background:#333;color:#fff}
+.lbl{font-size:14px;color:#666}
+.n{position:absolute;width:30px;height:30px;border-radius:50%;background:#000;color:#fff;font-weight:bold;font-size:16px;display:flex;align-items:center;justify-content:center;z-index:5}
+.line{height:10px;background:#ccc;border-radius:3px;margin:6px 0}

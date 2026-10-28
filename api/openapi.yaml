@@ -1,0 +1,154 @@
+openapi: 3.0.3
+info:
+  title: HammerLive — API подсистемы торгов
+  version: 1.0.0
+  description: >
+    Взаимодействие веб-клиента с подсистемой торгов через API Gateway.
+    Команды принимает BidCapture и помещает в очередь, проверку выполняет
+    BidTracker, поэтому команда ставки возвращает 202 Accepted, а результат
+    (bid.accepted / bid.rejected) приходит событием по WebSocket
+    /ws/lots/{lotId}, который обслуживает BidStreamer. Запросы состояния лота
+    обслуживает BidStreamer, история ставок читается из реплики журнала BidTracker.
+servers:
+  - url: https://api.hammerlive.by/v1
+security:
+  - bearerAuth: []
+paths:
+  /auctions/{auctionId}/registrations:
+    post:
+      summary: Регистрация на аукцион с холдированием депозита (AuctionSession)
+      parameters:
+        - $ref: '#/components/parameters/AuctionId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      responses:
+        '201': { description: Участник допущен к торгам }
+        '403': { $ref: '#/components/responses/Problem' }
+        '409': { $ref: '#/components/responses/Problem' }
+  /lots/{lotId}/state:
+    get:
+      summary: Текущее состояние лота (BidStreamer)
+      parameters: [ { $ref: '#/components/parameters/LotId' } ]
+      responses:
+        '200':
+          description: Состояние лота
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/LotState' }
+        '404': { $ref: '#/components/responses/Problem' }
+  /lots/{lotId}/bids:
+    post:
+      summary: Сделать ставку (BidCapture)
+      parameters:
+        - $ref: '#/components/parameters/LotId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/PlaceBidRequest' }
+      responses:
+        '202':
+          description: 'Ставка принята к обработке; результат придёт событием bid.accepted или bid.rejected'
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/BidPending' }
+        '400': { $ref: '#/components/responses/Problem' }
+        '401': { $ref: '#/components/responses/Problem' }
+        '404': { $ref: '#/components/responses/Problem' }
+        '429': { $ref: '#/components/responses/Problem' }
+        '503': { $ref: '#/components/responses/Problem' }
+    get:
+      summary: История ставок (реплика журнала BidTracker)
+      parameters:
+        - $ref: '#/components/parameters/LotId'
+        - { name: limit, in: query, schema: { type: integer, default: 50, maximum: 200 } }
+        - { name: before, in: query, schema: { type: integer }, description: bidId для постраничной выдачи }
+      responses:
+        '200': { description: Список ставок }
+  /lots/{lotId}/auto-bid:
+    put:
+      summary: Создать или изменить автоставку
+      parameters: [ { $ref: '#/components/parameters/LotId' } ]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [maxAmount]
+              properties: { maxAmount: { type: number, exclusiveMinimum: true, minimum: 0 } }
+      responses:
+        '200': { description: Автоставка сохранена }
+        '400': { $ref: '#/components/responses/Problem' }
+    delete:
+      summary: Отключить автоставку
+      parameters: [ { $ref: '#/components/parameters/LotId' } ]
+      responses:
+        '204': { description: Автоставка отключена }
+components:
+  securitySchemes:
+    bearerAuth: { type: http, scheme: bearer, bearerFormat: JWT }
+  parameters:
+    LotId: { name: lotId, in: path, required: true, schema: { type: integer, format: int64 } }
+    AuctionId: { name: auctionId, in: path, required: true, schema: { type: integer, format: int64 } }
+    IdempotencyKey: { name: Idempotency-Key, in: header, required: true, schema: { type: string, format: uuid } }
+  responses:
+    Problem:
+      description: Синхронная ошибка в формате RFC 9457
+      content:
+        application/problem+json:
+          schema: { $ref: '#/components/schemas/Problem' }
+  schemas:
+    PlaceBidRequest:
+      type: object
+      required: [amount, expectedPrice]
+      additionalProperties: false
+      properties:
+        amount: { type: number, multipleOf: 0.01 }
+        expectedPrice: { type: number, description: 'цена, которую видел участник' }
+    BidPending:
+      type: object
+      properties:
+        bidId: { type: integer }
+        lotId: { type: integer }
+        amount: { type: number }
+        status: { type: string, enum: [PENDING] }
+        serverTs: { type: string, format: date-time }
+    LotState:
+      type: object
+      description: Ответ GET /state и содержимое события bid.accepted
+      properties:
+        lotId: { type: integer }
+        status: { type: string, enum: [SCHEDULED, OPEN, CLOSED] }
+        currentPrice: { type: number }
+        bidStep: { type: number }
+        leader:
+          type: object
+          properties: { participantNo: { type: integer }, isYou: { type: boolean } }
+        bidsCount: { type: integer }
+        closesAt: { type: string, format: date-time }
+        version: { type: integer }
+    BidRejectedEvent:
+      type: object
+      description: Сообщение WebSocket bid.rejected — отказ BidTracker по бизнес-правилам
+      properties:
+        event: { type: string, enum: [bid.rejected] }
+        bidId: { type: integer }
+        lotId: { type: integer }
+        code:
+          type: string
+          enum: [NOT_REGISTERED, SELLER_CANNOT_BID, BID_TOO_LOW, LOT_CLOSED, NOT_MULTIPLE_OF_STEP, LIMIT_EXCEEDED]
+        detail: { type: string }
+        currentPrice: { type: number }
+        version: { type: integer }
+    Problem:
+      type: object
+      required: [type, title, status, code]
+      properties:
+        type: { type: string, format: uri }
+        title: { type: string }
+        status: { type: integer }
+        code:
+          type: string
+          enum: [VALIDATION_ERROR, UNAUTHORIZED, LOT_NOT_FOUND, TOO_MANY_REQUESTS, SERVICE_UNAVAILABLE, REGISTRATION_DENIED, ALREADY_REGISTERED]
+        detail: { type: string }

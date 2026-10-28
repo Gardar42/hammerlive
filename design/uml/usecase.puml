@@ -1,0 +1,53 @@
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Liberation Sans"
+skinparam defaultFontSize 15
+skinparam dpi 150
+skinparam backgroundColor white
+skinparam ArrowColor black
+left to right direction
+skinparam packageStyle rectangle
+skinparam actorStyle stick
+actor "Гость" as G
+actor "Участник торгов" as U
+actor "Организатор" as O
+actor "Аукционист" as AU
+actor "Модератор" as M
+actor "Платёжный\nпровайдер" as P
+G <|-- U
+rectangle "ИС HammerLive" {
+  usecase "Просмотреть каталог\nи календарь аукционов" as UC1
+  usecase "Зарегистрироваться" as UC2
+  usecase "Зарегистрироваться\nна аукцион" as UC3
+  usecase "Холдировать\nгарантийный депозит" as UC4
+  usecase "Сделать ставку" as UC5
+  usecase "Настроить автоставку" as UC6
+  usecase "Смотреть видеотрансляцию\nи поток ставок" as UC7
+  usecase "Оплатить выигрыш" as UC8
+  usecase "Оставить отзыв" as UC9
+  usecase "Создать аукцион\nи лоты" as UC10
+  usecase "Провести торги" as UC11
+  usecase "Запустить\nвидеотрансляцию" as UC12
+  usecase "Зафиксировать\nставку из зала" as UC18
+  usecase "Модерировать лоты" as UC13
+  usecase "Разрешить спор" as UC14
+}
+G --> UC1
+G --> UC2
+U --> UC3
+U --> UC5
+U --> UC7
+U --> UC8
+U --> UC9
+O --> UC10
+AU --> UC11
+AU --> UC18
+M --> UC13
+M --> UC14
+UC3 ..> UC4 : <<include>>
+UC6 ..> UC5 : <<extend>>
+UC11 ..> UC12 : <<include>>
+UC4 --> P
+UC8 --> P
+@enduml

@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1720" height="1150" viewBox="0 0 1720 1150">
+<rect width="1720" height="1150" fill="#fff"/>
+<rect x="30" y="360" width="400" height="330" rx="16" fill="#f7f7f7" stroke="#000" stroke-width="2" stroke-dasharray="10 6"/>
+<text x="44" y="388" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="bold" font-style="italic" text-anchor="start">Identity</text>
+<rect x="520" y="30" width="1170" height="310" rx="16" fill="#f7f7f7" stroke="#000" stroke-width="2" stroke-dasharray="10 6"/>
+<text x="534" y="58" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="bold" font-style="italic" text-anchor="start">AuctionSession</text>
+<rect x="1110" y="420" width="580" height="330" rx="16" fill="#f7f7f7" stroke="#000" stroke-width="2" stroke-dasharray="10 6"/>
+<text x="1124" y="448" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="bold" font-style="italic" text-anchor="start">BidTracker</text>
+<rect x="520" y="810" width="560" height="310" rx="16" fill="#f7f7f7" stroke="#000" stroke-width="2" stroke-dasharray="10 6"/>
+<text x="534" y="838" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="bold" font-style="italic" text-anchor="start">Payment</text>
+<rect x="30" y="810" width="400" height="310" rx="16" fill="#f7f7f7" stroke="#000" stroke-width="2" stroke-dasharray="10 6"/>
+<text x="44" y="838" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="bold" font-style="italic" text-anchor="start">Reputation</text>
+<line x1="230" y1="545" x2="95" y2="445" stroke="#000" stroke-width="1.8"/>
+<line x1="230" y1="545" x2="232" y2="430" stroke="#000" stroke-width="1.8"/>
+<line x1="230" y1="545" x2="105" y2="640" stroke="#000" stroke-width="1.8"/>
+<line x1="770" y1="195" x2="660" y2="95" stroke="#000" stroke-width="1.8"/>
+<line x1="770" y1="195" x2="890" y2="95" stroke="#000" stroke-width="1.8"/>
+<line x1="1390" y1="195" x2="1270" y2="95" stroke="#000" stroke-width="1.8"/>
+<line x1="1390" y1="195" x2="1520" y2="95" stroke="#000" stroke-width="1.8"/>
+<line x1="1390" y1="195" x2="1575" y2="265" stroke="#000" stroke-width="1.8"/>
+<line x1="1400" y1="590" x2="1255" y2="495" stroke="#000" stroke-width="1.8"/>
+<line x1="1400" y1="590" x2="1560" y2="495" stroke="#000" stroke-width="1.8"/>
+<line x1="1400" y1="590" x2="1560" y2="690" stroke="#000" stroke-width="1.8"/>
+<line x1="1400" y1="590" x2="1255" y2="690" stroke="#000" stroke-width="1.8"/>
+<line x1="985" y1="965" x2="985" y2="1075" stroke="#000" stroke-width="1.8"/>
+<line x1="985" y1="965" x2="985" y2="860" stroke="#000" stroke-width="1.8"/>
+<line x1="615" y1="965" x2="615" y2="1075" stroke="#000" stroke-width="1.8"/>
+<line x1="230" y1="965" x2="115" y2="1075" stroke="#000" stroke-width="1.8"/>
+<line x1="230" y1="965" x2="345" y2="1075" stroke="#000" stroke-width="1.8"/>
+<line x1="440" y1="255" x2="230" y2="545" stroke="#000" stroke-width="1.8"/>
+<line x1="440" y1="255" x2="770" y2="195" stroke="#000" stroke-width="1.8"/>
+<line x1="650" y1="430" x2="230" y2="545" stroke="#000" stroke-width="1.8"/>
+<line x1="650" y1="430" x2="770" y2="195" stroke="#000" stroke-width="1.8"/>
+<line x1="1080" y1="195" x2="770" y2="195" stroke="#000" stroke-width="1.8"/>
+<line x1="1080" y1="195" x2="1390" y2="195" stroke="#000" stroke-width="1.8"/>
+<line x1="820" y1="600" x2="230" y2="545" stroke="#000" stroke-width="1.8"/>
+<line x1="820" y1="600" x2="1400" y2="590" stroke="#000" stroke-width="1.8"/>
+<line x1="1390" y1="380" x2="1390" y2="195" stroke="#000" stroke-width="1.8"/>
+<line x1="1390" y1="380" x2="1400" y2="590" stroke="#000" stroke-width="1.8"/>
+<line x1="1240" y1="965" x2="1400" y2="590" stroke="#000" stroke-width="1.8"/>
+<line x1="1240" y1="965" x2="985" y2="965" stroke="#000" stroke-width="1.8"/>
+<line x1="800" y1="965" x2="615" y2="965" stroke="#000" stroke-width="1.8"/>
+<line x1="800" y1="965" x2="985" y2="965" stroke="#000" stroke-width="1.8"/>
+<line x1="470" y1="760" x2="230" y2="545" stroke="#000" stroke-width="1.8"/>
+<line x1="470" y1="760" x2="615" y2="965" stroke="#000" stroke-width="1.8"/>
+<line x1="230" y1="750" x2="230" y2="545" stroke="#000" stroke-width="1.8"/>
+<line x1="230" y1="750" x2="230" y2="965" stroke="#000" stroke-width="1.8"/>
+<rect x="148" y="517" width="164" height="56" fill="#fff" stroke="#000" stroke-width="2.2"/>
+<text x="230" y="552" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="bold" text-anchor="middle">Пользователь</text>
+<rect x="688" y="167" width="164" height="56" fill="#fff" stroke="#000" stroke-width="2.2"/>
+<text x="770" y="202" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="bold" text-anchor="middle">Аукцион</text>
+<rect x="1308" y="167" width="164" height="56" fill="#fff" stroke="#000" stroke-width="2.2"/>
+<text x="1390" y="202" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="bold" text-anchor="middle">Лот</text>
+<rect x="1318" y="562" width="164" height="56" fill="#fff" stroke="#000" stroke-width="2.2"/>
+<text x="1400" y="597" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="bold" text-anchor="middle">Ставка</text>
+<rect x="903" y="937" width="164" height="56" fill="#fff" stroke="#000" stroke-width="2.2"/>
+<text x="985" y="972" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="bold" text-anchor="middle">Платёж</text>
+<rect x="533" y="937" width="164" height="56" fill="#fff" stroke="#000" stroke-width="2.2"/>
+<text x="615" y="972" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="bold" text-anchor="middle">Карта</text>
+<rect x="148" y="937" width="164" height="56" fill="#fff" stroke="#000" stroke-width="2.2"/>
+<text x="230" y="972" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="bold" text-anchor="middle">Отзыв</text>
+<ellipse cx="95" cy="445" rx="58" ry="23" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="95" y="451" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-decoration="underline" text-anchor="middle">UserID</text>
+<ellipse cx="232" cy="430" rx="58" ry="23" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="232" y="436" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">Роль</text>
+<ellipse cx="105" cy="640" rx="58" ry="23" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="105" y="646" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">ФИО</text>
+<ellipse cx="660" cy="95" rx="74.69999999999999" ry="23" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="660" y="101" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-decoration="underline" text-anchor="middle">AuctionID</text>
+<ellipse cx="890" cy="95" rx="87.3" ry="23" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="890" y="101" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">Дата начала</text>
+<ellipse cx="1270" cy="95" rx="58" ry="23" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="1270" y="101" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-decoration="underline" text-anchor="middle">LotID</text>
+<ellipse cx="1520" cy="95" rx="106.2" ry="23" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="1520" y="101" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">Стартовая цена</text>
+<ellipse cx="1575" cy="265" rx="81.0" ry="23" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="1575" y="271" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">Шаг ставки</text>
+<ellipse cx="1255" cy="495" rx="58" ry="23" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="1255" y="501" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-decoration="underline" text-anchor="middle">BidID</text>
+<ellipse cx="1560" cy="495" rx="58" ry="23" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="1560" y="501" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">Сумма</text>
+<ellipse cx="1560" cy="690" rx="58" ry="23" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="1560" y="696" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">Время</text>
+<ellipse cx="1255" cy="690" rx="68.4" ry="23" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="1255" y="696" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">Источник</text>
+<ellipse cx="985" cy="1075" rx="58" ry="23" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="985" y="1081" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">Статус</text>
+<ellipse cx="985" cy="860" rx="74.69999999999999" ry="23" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="985" y="866" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-decoration="underline" text-anchor="middle">PaymentID</text>
+<ellipse cx="615" cy="1075" rx="87.3" ry="23" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="615" y="1081" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">Маска карты</text>
+<ellipse cx="115" cy="1075" rx="68.4" ry="23" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="115" y="1081" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-decoration="underline" text-anchor="middle">ReviewID</text>
+<ellipse cx="345" cy="1075" rx="58" ry="23" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="345" y="1081" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">Оценка</text>
+<polygon points="358,255 440,215 522,255 440,295" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="440" y="261" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">Организует</text>
+<polygon points="568,430 650,390 732,430 650,470" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="650" y="436" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">Участвует в</text>
+<polygon points="998,195 1080,155 1162,195 1080,235" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="1080" y="201" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">Содержит</text>
+<polygon points="738,600 820,560 902,600 820,640" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="820" y="606" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">Делает</text>
+<polygon points="1308,380 1390,340 1472,380 1390,420" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="1390" y="386" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">Получает</text>
+<polygon points="1158,965 1240,925 1322,965 1240,1005" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="1240" y="971" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">Оплачивает</text>
+<polygon points="718,965 800,925 882,965 800,1005" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="800" y="961" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">Списывается</text>
+<text x="800" y="981" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">с</text>
+<polygon points="388,760 470,720 552,760 470,800" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="470" y="766" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">Привязывает</text>
+<polygon points="148,750 230,710 312,750 230,790" fill="#fff" stroke="#000" stroke-width="2"/>
+<text x="230" y="756" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="middle">Оставляет</text>
+<text x="270.1892666434543" y="516.6655536132856" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">1</text>
+<text x="669.9325707418018" y="204.98094908899185" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">N</text>
+<text x="330.86512863577394" y="535.860676340559" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">M</text>
+<text x="736.8478247109942" y="236.33758120339226" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">N</text>
+<text x="868.0" y="213.0" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">1</text>
+<text x="1292.0" y="187.0" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">N</text>
+<text x="326.72429668202693" y="572.0730347457597" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">1</text>
+<text x="1301.7782729669552" y="583.6915459723249" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">N</text>
+<text x="1377.0" y="244.0" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">1</text>
+<text x="1410.8909100664373" y="550.3997628540081" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">N</text>
+<text x="1369.8171981875191" y="632.6147477836706" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">1</text>
+<text x="1083.0" y="983.0" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">1</text>
+<text x="713.0" y="983.0" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">1</text>
+<text x="887.0" y="957.0" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">N</text>
+<text x="264.49895114444917" y="598.3588325097636" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">1</text>
+<text x="596.5690897347799" y="921.4303083997416" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">N</text>
+<text x="217.0" y="594.0" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">1</text>
+<text x="243.0" y="926.0" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">N</text>
+</svg>

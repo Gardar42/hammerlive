@@ -1,0 +1,39 @@
+@startuml
+!include common.iuml
+skinparam componentStyle uml2
+skinparam defaultFontSize 15
+[Веб-клиент] as WEB
+[Пульт аукциониста] as CON
+[API Gateway] as GW
+rectangle "Сторона команд (запись)" {
+  [BidCapture] as BC
+  [AuctioneerCapture] as AC
+  queue "очереди\nставок" as Q1
+  [BidTracker\n(модель записи)] as BT
+  database "Журнал ставок\nbids (PostgreSQL)" as J
+}
+queue "очередь принятых\nставок: BidAccepted,\nBidRejected" as Q2
+rectangle "Сторона запросов (чтение)" {
+  [BidStreamer] as BS
+  [BidTracker\n(чтение истории)] as BTR
+  database "Redis\nlot:{id}:state,\nlot:{id}:last_bids" as RM
+  database "Реплика журнала\n(только чтение)" as RJ
+}
+WEB --> GW : команды:\nPOST /bids
+CON --> GW : ставки\nиз зала
+WEB --> GW : запросы:\nGET /state, /bids
+GW --> BC : PlaceBid
+GW --> AC : PlaceFloorBid
+BC --> Q1 : BidPlaced
+AC --> Q1 : FloorBidPlaced
+Q1 --> BT
+BT --> J : append
+BT --> Q2 : publish
+Q2 --> BS : subscribe
+BS --> RM : обновить\nпроекцию
+J ..> RJ : репликация
+GW --> BS : GetLotState
+GW --> BTR : GetBidHistory
+BTR --> RJ
+BS ..> WEB : WebSocket:\nbid.accepted
+@enduml

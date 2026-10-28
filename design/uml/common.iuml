@@ -1,0 +1,7 @@
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Liberation Sans"
+skinparam defaultFontSize 15
+skinparam dpi 150
+skinparam backgroundColor white
+skinparam ArrowColor black

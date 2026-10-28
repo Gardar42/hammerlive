@@ -1,0 +1,434 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1720" height="1640" viewBox="0 0 1720 1640">
+<rect width="1720" height="1640" fill="#fff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10" fill="none" stroke="#333" stroke-width="1.6"/></marker></defs>
+<rect x="20" y="20" width="400" height="345" rx="14" fill="none" stroke="#000" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="34" y="46" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="bold" text-anchor="start" fill="#000">Identity (вспомогательный)</text>
+<text x="34" y="68" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-style="italic" text-anchor="start" fill="#000">PostgreSQL</text>
+<rect x="47" y="80" width="345" height="30" fill="#e3e3e3" stroke="#000" stroke-width="1.6"/>
+<text x="219.5" y="101" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">users</text>
+<rect x="47" y="110" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="110" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="131" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="start" fill="#000">bigint</text>
+<text x="195" y="131" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-decoration="underline">user_id</text>
+<rect x="47" y="140" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="140" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="161" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(255)</text>
+<text x="195" y="161" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">email</text>
+<rect x="47" y="170" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="170" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="191" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(20)</text>
+<text x="195" y="191" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">phone</text>
+<rect x="47" y="200" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="200" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="221" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(255)</text>
+<text x="195" y="221" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">password_hash</text>
+<rect x="47" y="230" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="230" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="251" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(150)</text>
+<text x="195" y="251" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">full_name</text>
+<rect x="47" y="260" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="260" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="281" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(20)</text>
+<text x="195" y="281" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">role</text>
+<rect x="47" y="290" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="290" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="311" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(20)</text>
+<text x="195" y="311" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">status</text>
+<rect x="445" y="20" width="1255" height="465" rx="14" fill="none" stroke="#000" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="459" y="46" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="bold" text-anchor="start" fill="#000">AuctionSession – БД сеансов</text>
+<text x="459" y="68" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-style="italic" text-anchor="start" fill="#000">PostgreSQL</text>
+<rect x="470" y="80" width="345" height="30" fill="#e3e3e3" stroke="#000" stroke-width="1.6"/>
+<text x="642.5" y="101" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">auctions</text>
+<rect x="470" y="110" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="610" y="110" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="478" y="131" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="start" fill="#000">bigint</text>
+<text x="618" y="131" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-decoration="underline">auction_id</text>
+<rect x="470" y="140" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="610" y="140" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="478" y="161" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bigint</text>
+<text x="618" y="161" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-style="italic" text-anchor="start" fill="#000">organizer_id (ID)</text>
+<rect x="470" y="170" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="610" y="170" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="478" y="191" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(200)</text>
+<text x="618" y="191" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">title</text>
+<rect x="470" y="200" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="610" y="200" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="478" y="221" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">timestamptz</text>
+<text x="618" y="221" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">starts_at</text>
+<rect x="470" y="230" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="610" y="230" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="478" y="251" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">numeric(12,2)</text>
+<text x="618" y="251" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">deposit</text>
+<rect x="470" y="260" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="610" y="260" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="478" y="281" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(20)</text>
+<text x="618" y="281" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">status</text>
+<rect x="470" y="345" width="345" height="30" fill="#e3e3e3" stroke="#000" stroke-width="1.6"/>
+<text x="642.5" y="366" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">categories</text>
+<rect x="470" y="375" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="610" y="375" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="478" y="396" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="start" fill="#000">integer</text>
+<text x="618" y="396" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-decoration="underline">category_id</text>
+<rect x="470" y="405" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="610" y="405" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="478" y="426" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(100)</text>
+<text x="618" y="426" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">name</text>
+<rect x="895" y="80" width="345" height="30" fill="#e3e3e3" stroke="#000" stroke-width="1.6"/>
+<text x="1067.5" y="101" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">lots</text>
+<rect x="895" y="110" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1035" y="110" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="903" y="131" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="start" fill="#000">bigint</text>
+<text x="1043" y="131" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-decoration="underline">lot_id</text>
+<rect x="895" y="140" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1035" y="140" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="903" y="161" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bigint</text>
+<text x="1043" y="161" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">auction_id (FK)</text>
+<rect x="895" y="170" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1035" y="170" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="903" y="191" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">integer</text>
+<text x="1043" y="191" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">category_id (FK)</text>
+<rect x="895" y="200" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1035" y="200" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="903" y="221" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bigint</text>
+<text x="1043" y="221" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-style="italic" text-anchor="start" fill="#000">seller_id (ID)</text>
+<rect x="895" y="230" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1035" y="230" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="903" y="251" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(200)</text>
+<text x="1043" y="251" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">title</text>
+<rect x="895" y="260" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1035" y="260" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="903" y="281" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">numeric(12,2)</text>
+<text x="1043" y="281" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">start_price</text>
+<rect x="895" y="290" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1035" y="290" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="903" y="311" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">numeric(12,2)</text>
+<text x="1043" y="311" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bid_step</text>
+<rect x="895" y="320" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1035" y="320" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="903" y="341" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(20)</text>
+<text x="1043" y="341" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">status</text>
+<rect x="1325" y="80" width="345" height="30" fill="#e3e3e3" stroke="#000" stroke-width="1.6"/>
+<text x="1497.5" y="101" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">registrations</text>
+<rect x="1325" y="110" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1465" y="110" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1333" y="131" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="start" fill="#000">bigint</text>
+<text x="1473" y="131" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-decoration="underline">registration_id</text>
+<rect x="1325" y="140" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1465" y="140" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1333" y="161" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bigint</text>
+<text x="1473" y="161" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">auction_id (FK)</text>
+<rect x="1325" y="170" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1465" y="170" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1333" y="191" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bigint</text>
+<text x="1473" y="191" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-style="italic" text-anchor="start" fill="#000">user_id (ID)</text>
+<rect x="1325" y="200" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1465" y="200" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1333" y="221" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(64)</text>
+<text x="1473" y="221" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">hold_id</text>
+<rect x="1325" y="230" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1465" y="230" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1333" y="251" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(20)</text>
+<text x="1473" y="251" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">status</text>
+<path d="M815 125.0 L852 125.0 L852 155.0 L895 155.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<line x1="825" y1="116.0" x2="825" y2="134.0" stroke="#000" stroke-width="1.8"/>
+<line x1="831" y1="116.0" x2="831" y2="134.0" stroke="#000" stroke-width="1.8"/>
+<line x1="895" y1="146.0" x2="881" y2="155.0" stroke="#000" stroke-width="1.8"/>
+<line x1="895" y1="164.0" x2="881" y2="155.0" stroke="#000" stroke-width="1.8"/>
+<line x1="875" y1="146.0" x2="875" y2="164.0" stroke="#000" stroke-width="1.8"/>
+<path d="M815 390.0 L870 390.0 L870 185.0 L895 185.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<line x1="825" y1="381.0" x2="825" y2="399.0" stroke="#000" stroke-width="1.8"/>
+<line x1="831" y1="381.0" x2="831" y2="399.0" stroke="#000" stroke-width="1.8"/>
+<line x1="895" y1="176.0" x2="881" y2="185.0" stroke="#000" stroke-width="1.8"/>
+<line x1="895" y1="194.0" x2="881" y2="185.0" stroke="#000" stroke-width="1.8"/>
+<circle cx="870" cy="185.0" r="6" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M815 125.0 L835 125.0 L835 66 L1290 66 L1290 155.0 L1325 155.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<line x1="825" y1="116.0" x2="825" y2="134.0" stroke="#000" stroke-width="1.8"/>
+<line x1="831" y1="116.0" x2="831" y2="134.0" stroke="#000" stroke-width="1.8"/>
+<line x1="1325" y1="146.0" x2="1311" y2="155.0" stroke="#000" stroke-width="1.8"/>
+<line x1="1325" y1="164.0" x2="1311" y2="155.0" stroke="#000" stroke-width="1.8"/>
+<circle cx="1300" cy="155.0" r="6" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<rect x="20" y="545" width="1210" height="520" rx="14" fill="none" stroke="#000" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="34" y="571" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="bold" text-anchor="start" fill="#000">BidTracker – Журнал ставок</text>
+<text x="34" y="593" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-style="italic" text-anchor="start" fill="#000">PostgreSQL</text>
+<rect x="47" y="605" width="345" height="30" fill="#e3e3e3" stroke="#000" stroke-width="1.6"/>
+<text x="219.5" y="626" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">lot_rules</text>
+<rect x="47" y="635" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="635" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="656" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="start" fill="#000">bigint</text>
+<text x="195" y="656" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-decoration="underline">lot_id</text>
+<rect x="47" y="665" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="665" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="686" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bigint</text>
+<text x="195" y="686" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">auction_id</text>
+<rect x="47" y="695" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="695" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="716" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">numeric(12,2)</text>
+<text x="195" y="716" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">start_price</text>
+<rect x="47" y="725" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="725" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="746" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">numeric(12,2)</text>
+<text x="195" y="746" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bid_step</text>
+<rect x="47" y="755" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="755" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="776" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">timestamptz</text>
+<text x="195" y="776" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">closes_at</text>
+<rect x="47" y="785" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="785" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="806" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(20)</text>
+<text x="195" y="806" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">status</text>
+<rect x="47" y="865" width="345" height="30" fill="#e3e3e3" stroke="#000" stroke-width="1.6"/>
+<text x="219.5" y="886" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">participants</text>
+<rect x="47" y="895" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="895" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="916" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="start" fill="#000">bigint</text>
+<text x="195" y="916" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-decoration="underline">auction_id</text>
+<rect x="47" y="925" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="925" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="946" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="start" fill="#000">bigint</text>
+<text x="195" y="946" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-decoration="underline">user_id</text>
+<rect x="47" y="955" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="955" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="976" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">integer</text>
+<text x="195" y="976" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">participant_no</text>
+<rect x="47" y="985" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="985" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="1006" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">numeric(12,2)</text>
+<text x="195" y="1006" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bid_limit</text>
+<rect x="455" y="605" width="345" height="30" fill="#e3e3e3" stroke="#000" stroke-width="1.6"/>
+<text x="627.5" y="626" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">bids</text>
+<rect x="455" y="635" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="595" y="635" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="463" y="656" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="start" fill="#000">bigint</text>
+<text x="603" y="656" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-decoration="underline">bid_id</text>
+<rect x="455" y="665" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="595" y="665" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="463" y="686" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bigint</text>
+<text x="603" y="686" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">lot_id (FK)</text>
+<rect x="455" y="695" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="595" y="695" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="463" y="716" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bigint</text>
+<text x="603" y="716" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-style="italic" text-anchor="start" fill="#000">user_id (ID)</text>
+<rect x="455" y="725" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="595" y="725" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="463" y="746" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(10)</text>
+<text x="603" y="746" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">source</text>
+<rect x="455" y="755" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="595" y="755" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="463" y="776" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">numeric(12,2)</text>
+<text x="603" y="776" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">amount</text>
+<rect x="455" y="785" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="595" y="785" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="463" y="806" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">timestamptz(6)</text>
+<text x="603" y="806" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">server_ts</text>
+<rect x="455" y="815" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="595" y="815" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="463" y="836" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(20)</text>
+<text x="603" y="836" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">status</text>
+<rect x="863" y="605" width="345" height="30" fill="#e3e3e3" stroke="#000" stroke-width="1.6"/>
+<text x="1035.5" y="626" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">auto_bids</text>
+<rect x="863" y="635" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1003" y="635" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="871" y="656" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="start" fill="#000">bigint</text>
+<text x="1011" y="656" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-decoration="underline">auto_bid_id</text>
+<rect x="863" y="665" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1003" y="665" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="871" y="686" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bigint</text>
+<text x="1011" y="686" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">lot_id (FK)</text>
+<rect x="863" y="695" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1003" y="695" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="871" y="716" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bigint</text>
+<text x="1011" y="716" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-style="italic" text-anchor="start" fill="#000">user_id (ID)</text>
+<rect x="863" y="725" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1003" y="725" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="871" y="746" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">numeric(12,2)</text>
+<text x="1011" y="746" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">max_amount</text>
+<rect x="863" y="755" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1003" y="755" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="871" y="776" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">boolean</text>
+<text x="1011" y="776" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">active</text>
+<path d="M392 650.0 L425 650.0 L425 680.0 L455 680.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<line x1="402" y1="641.0" x2="402" y2="659.0" stroke="#000" stroke-width="1.8"/>
+<line x1="408" y1="641.0" x2="408" y2="659.0" stroke="#000" stroke-width="1.8"/>
+<line x1="455" y1="671.0" x2="441" y2="680.0" stroke="#000" stroke-width="1.8"/>
+<line x1="455" y1="689.0" x2="441" y2="680.0" stroke="#000" stroke-width="1.8"/>
+<circle cx="430" cy="680.0" r="6" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M392 650.0 L410 650.0 L410 875 L835 875 L835 680.0 L863 680.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<line x1="402" y1="641.0" x2="402" y2="659.0" stroke="#000" stroke-width="1.8"/>
+<line x1="408" y1="641.0" x2="408" y2="659.0" stroke="#000" stroke-width="1.8"/>
+<line x1="863" y1="671.0" x2="849" y2="680.0" stroke="#000" stroke-width="1.8"/>
+<line x1="863" y1="689.0" x2="849" y2="680.0" stroke="#000" stroke-width="1.8"/>
+<circle cx="838" cy="680.0" r="6" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<rect x="1255" y="545" width="445" height="520" rx="14" fill="none" stroke="#000" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="1269" y="571" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="bold" text-anchor="start" fill="#000">BidStreamer – Кэш потока</text>
+<text x="1269" y="593" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-style="italic" text-anchor="start" fill="#000">Redis (ключ-значение)</text>
+<rect x="1305" y="605" width="345" height="30" fill="#e3e3e3" stroke="#000" stroke-width="1.6"/>
+<text x="1477.5" y="626" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">lot:{id}:state</text>
+<rect x="1305" y="635" width="345" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1313" y="656" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-style="italic" text-anchor="start" fill="#000">тип: HASH</text>
+<rect x="1305" y="665" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1445" y="665" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1313" y="686" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">decimal</text>
+<text x="1453" y="686" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">current_price</text>
+<rect x="1305" y="695" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1445" y="695" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1313" y="716" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">int</text>
+<text x="1453" y="716" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">leader_no</text>
+<rect x="1305" y="725" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1445" y="725" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1313" y="746" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">int</text>
+<text x="1453" y="746" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bids_count</text>
+<rect x="1305" y="755" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1445" y="755" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1313" y="776" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">timestamp</text>
+<text x="1453" y="776" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">closes_at</text>
+<rect x="1305" y="785" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1445" y="785" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1313" y="806" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">int</text>
+<text x="1453" y="806" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">version</text>
+<rect x="1305" y="865" width="345" height="30" fill="#e3e3e3" stroke="#000" stroke-width="1.6"/>
+<text x="1477.5" y="886" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">lot:{id}:last_bids</text>
+<rect x="1305" y="895" width="345" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1313" y="916" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-style="italic" text-anchor="start" fill="#000">тип: LIST</text>
+<rect x="1305" y="925" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1445" y="925" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1313" y="946" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">decimal</text>
+<text x="1453" y="946" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">amount</text>
+<rect x="1305" y="955" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1445" y="955" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1313" y="976" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">int</text>
+<text x="1453" y="976" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">participant_no</text>
+<rect x="1305" y="985" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1445" y="985" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1313" y="1006" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">timestamp</text>
+<text x="1453" y="1006" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">ts</text>
+<rect x="20" y="1125" width="400" height="300" rx="14" fill="none" stroke="#000" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="34" y="1151" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="bold" text-anchor="start" fill="#000">Reputation (вспомогательный)</text>
+<text x="34" y="1173" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-style="italic" text-anchor="start" fill="#000">PostgreSQL</text>
+<rect x="47" y="1185" width="345" height="30" fill="#e3e3e3" stroke="#000" stroke-width="1.6"/>
+<text x="219.5" y="1206" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">reviews</text>
+<rect x="47" y="1215" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="1215" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="1236" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="start" fill="#000">bigint</text>
+<text x="195" y="1236" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-decoration="underline">review_id</text>
+<rect x="47" y="1245" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="1245" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="1266" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bigint</text>
+<text x="195" y="1266" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-style="italic" text-anchor="start" fill="#000">lot_id (ID)</text>
+<rect x="47" y="1275" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="1275" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="1296" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bigint</text>
+<text x="195" y="1296" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-style="italic" text-anchor="start" fill="#000">author_id (ID)</text>
+<rect x="47" y="1305" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="1305" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="1326" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bigint</text>
+<text x="195" y="1326" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-style="italic" text-anchor="start" fill="#000">target_id (ID)</text>
+<rect x="47" y="1335" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="1335" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="1356" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">smallint</text>
+<text x="195" y="1356" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">rating</text>
+<rect x="47" y="1365" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="187" y="1365" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="55" y="1386" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">text</text>
+<text x="195" y="1386" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">text</text>
+<rect x="445" y="1125" width="1255" height="420" rx="14" fill="none" stroke="#000" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="459" y="1151" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="bold" text-anchor="start" fill="#000">Payment – БД платежей</text>
+<text x="459" y="1173" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-style="italic" text-anchor="start" fill="#000">PostgreSQL</text>
+<rect x="470" y="1185" width="345" height="30" fill="#e3e3e3" stroke="#000" stroke-width="1.6"/>
+<text x="642.5" y="1206" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">lot_results</text>
+<rect x="470" y="1215" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="610" y="1215" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="478" y="1236" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="start" fill="#000">bigint</text>
+<text x="618" y="1236" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-decoration="underline">lot_id</text>
+<rect x="470" y="1245" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="610" y="1245" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="478" y="1266" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bigint</text>
+<text x="618" y="1266" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-style="italic" text-anchor="start" fill="#000">winner_id (ID)</text>
+<rect x="470" y="1275" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="610" y="1275" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="478" y="1296" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bigint</text>
+<text x="618" y="1296" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-style="italic" text-anchor="start" fill="#000">winning_bid_id (ID)</text>
+<rect x="470" y="1305" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="610" y="1305" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="478" y="1326" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">numeric(12,2)</text>
+<text x="618" y="1326" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">final_price</text>
+<rect x="470" y="1375" width="345" height="30" fill="#e3e3e3" stroke="#000" stroke-width="1.6"/>
+<text x="642.5" y="1396" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">payment_methods</text>
+<rect x="470" y="1405" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="610" y="1405" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="478" y="1426" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="start" fill="#000">bigint</text>
+<text x="618" y="1426" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-decoration="underline">card_id</text>
+<rect x="470" y="1435" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="610" y="1435" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="478" y="1456" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bigint</text>
+<text x="618" y="1456" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-style="italic" text-anchor="start" fill="#000">user_id (ID)</text>
+<rect x="470" y="1465" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="610" y="1465" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="478" y="1486" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(128)</text>
+<text x="618" y="1486" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">provider_token</text>
+<rect x="470" y="1495" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="610" y="1495" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="478" y="1516" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(19)</text>
+<text x="618" y="1516" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">card_mask</text>
+<rect x="895" y="1185" width="345" height="30" fill="#e3e3e3" stroke="#000" stroke-width="1.6"/>
+<text x="1067.5" y="1206" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">payments</text>
+<rect x="895" y="1215" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1035" y="1215" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="903" y="1236" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="start" fill="#000">bigint</text>
+<text x="1043" y="1236" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" text-decoration="underline">payment_id</text>
+<rect x="895" y="1245" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1035" y="1245" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="903" y="1266" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bigint</text>
+<text x="1043" y="1266" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">lot_id (FK)</text>
+<rect x="895" y="1275" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1035" y="1275" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="903" y="1296" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">bigint</text>
+<text x="1043" y="1296" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">card_id (FK)</text>
+<rect x="895" y="1305" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1035" y="1305" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="903" y="1326" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">numeric(12,2)</text>
+<text x="1043" y="1326" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">amount</text>
+<rect x="895" y="1335" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1035" y="1335" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="903" y="1356" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">numeric(12,2)</text>
+<text x="1043" y="1356" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">commission</text>
+<rect x="895" y="1365" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1035" y="1365" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="903" y="1386" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(20)</text>
+<text x="1043" y="1386" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">status</text>
+<rect x="895" y="1395" width="140" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="1035" y="1395" width="205" height="30" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="903" y="1416" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">varchar(64)</text>
+<text x="1043" y="1416" font-family="Liberation Sans, Arial, sans-serif" font-size="17" text-anchor="start" fill="#000">provider_txn_id</text>
+<path d="M815 1230.0 L855 1230.0 L855 1260.0 L895 1260.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<line x1="825" y1="1221.0" x2="825" y2="1239.0" stroke="#000" stroke-width="1.8"/>
+<line x1="831" y1="1221.0" x2="831" y2="1239.0" stroke="#000" stroke-width="1.8"/>
+<line x1="895" y1="1251.0" x2="881" y2="1260.0" stroke="#000" stroke-width="1.8"/>
+<line x1="895" y1="1269.0" x2="881" y2="1260.0" stroke="#000" stroke-width="1.8"/>
+<circle cx="870" cy="1260.0" r="6" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M815 1420.0 L870 1420.0 L870 1290.0 L895 1290.0" fill="none" stroke="#000" stroke-width="1.8"/>
+<line x1="825" y1="1411.0" x2="825" y2="1429.0" stroke="#000" stroke-width="1.8"/>
+<line x1="831" y1="1411.0" x2="831" y2="1429.0" stroke="#000" stroke-width="1.8"/>
+<line x1="895" y1="1281.0" x2="881" y2="1290.0" stroke="#000" stroke-width="1.8"/>
+<line x1="895" y1="1299.0" x2="881" y2="1290.0" stroke="#000" stroke-width="1.8"/>
+<circle cx="870" cy="1290.0" r="6" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<path d="M300 545 L300 500 L690 500 L690 487" fill="none" stroke="#333" stroke-width="1.8" stroke-dasharray="8 6" marker-end="url(#ah)"/>
+<text x="312" y="528" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-style="italic" text-anchor="start" fill="#222">lot_id, auction_id: копия правил лота</text>
+<path d="M1255 745 L1232 745" fill="none" stroke="#333" stroke-width="1.8" stroke-dasharray="8 6" marker-end="url(#ah)"/>
+<text x="0" y="0" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-style="italic" text-anchor="start" fill="#222"></text>
+<text x="1243" y="723" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-style="italic" text-anchor="middle" fill="#222">lot_id</text>
+<path d="M640 1125 L640 1067" fill="none" stroke="#333" stroke-width="1.8" stroke-dasharray="8 6" marker-end="url(#ah)"/>
+<text x="652" y="1103" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-style="italic" text-anchor="start" fill="#222">winning_bid_id</text>
+<path d="M420 1325 L443 1325" fill="none" stroke="#333" stroke-width="1.8" stroke-dasharray="8 6" marker-end="url(#ah)"/>
+<text x="0" y="0" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-style="italic" text-anchor="start" fill="#222"></text>
+<text x="432" y="1303" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-style="italic" text-anchor="middle" fill="#222">lot_id</text>
+<line x1="30" y1="1584" x2="90" y2="1584" stroke="#000" stroke-width="1.8"/>
+<line x1="40" y1="1575" x2="40" y2="1593" stroke="#000" stroke-width="1.8"/>
+<line x1="46" y1="1575" x2="46" y2="1593" stroke="#000" stroke-width="1.8"/>
+<line x1="90" y1="1575" x2="76" y2="1584" stroke="#000" stroke-width="1.8"/>
+<line x1="90" y1="1593" x2="76" y2="1584" stroke="#000" stroke-width="1.8"/>
+<circle cx="65" cy="1584" r="6" fill="#fff" stroke="#000" stroke-width="1.8"/>
+<text x="105" y="1590" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="start" fill="#000">1 : N внутри базы сервиса (FK)</text>
+<path d="M430 1584 L490 1584" stroke="#333" stroke-width="1.8" stroke-dasharray="8 6" marker-end="url(#ah)"/>
+<text x="505" y="1590" font-family="Liberation Sans, Arial, sans-serif" font-size="16" text-anchor="start" fill="#000">ссылка на данные другого сервиса (без FK)</text>
+<text x="30" y="1618" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-style="italic" text-anchor="start" fill="#000">(ID) – идентификатор записи другого сервиса; user_id, organizer_id, seller_id, winner_id, author_id, target_id ссылаются на users (Identity)</text>
+</svg>

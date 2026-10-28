@@ -1,0 +1,52 @@
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Liberation Sans"
+skinparam defaultFontSize 14
+skinparam dpi 150
+skinparam backgroundColor white
+skinparam ArrowColor black
+skinparam sequenceMessageAlign center
+autonumber
+hide footbox
+actor "Участник" as U
+participant "Веб-клиент" as W
+participant "API Gateway" as G
+participant "BidCapture" as B
+queue "очередь ставок\nучастников" as Q1
+participant "BidTracker" as T
+database "Журнал\nставок" as J
+queue "принятые\nставки" as Q2
+participant "BidStreamer" as S
+participant "Другие\nучастники" as O
+U -> W : Нажать «Ставка +шаг»
+W -> G : AMQP: placeBid(lotId, сумма)
+G -> B : ставка + токен
+activate B
+B -> B : отметка времени,\nпроверка формата
+B ->> Q1 : BidPlaced
+B --> G : принято к обработке
+deactivate B
+G --> W : ставка отправлена
+Q1 ->> T : BidPlaced
+activate T
+T -> T : объединение с потоком\nставок аукциониста,\nпроверка: цена + шаг, лимит
+alt ставка корректна
+  T -> J : записать ставку
+  T ->> Q2 : BidAccepted
+  deactivate T
+  Q2 ->> S : BidAccepted
+  activate S
+  S -->> W : WebSocket: новая цена, «Вы лидируете»
+  S -->> O : WebSocket: новая цена, таймер
+  deactivate S
+  W --> U : «Вы лидируете»
+else ставка отклонена
+  activate T
+  T ->> Q2 : BidRejected(причина)
+  deactivate T
+  Q2 ->> S : BidRejected
+  S -->> W : WebSocket: отказ, актуальная цена
+  W --> U : причина отказа
+end
+@enduml
