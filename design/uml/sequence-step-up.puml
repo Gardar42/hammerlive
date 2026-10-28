@@ -1,0 +1,54 @@
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Liberation Sans"
+skinparam defaultFontSize 14
+skinparam dpi 150
+skinparam backgroundColor white
+skinparam ArrowColor black
+skinparam sequenceMessageAlign center
+autonumber
+hide footbox
+actor "Участник" as U
+participant "Веб-клиент" as W
+participant "API Gateway" as G
+participant "BidCapture" as B
+participant "Identity" as I
+queue "очередь ставок\n(маршрут по lotId)" as Q1
+participant "BidTracker\n(шард лота)" as T
+participant "BidStreamer" as S
+U -> W : Ставка 6 000 BYN
+W -> G : POST /lots/{id}/bids
+G -> B : PlaceBid
+activate B
+B -> B : сумма > порога\nподтверждения?
+alt требуется подтверждение
+  B -> I : создать challenge
+  I -->> U : одноразовый код (SMS)
+  B --> G : 403 STEP_UP_REQUIRED, challengeId
+  deactivate B
+  G --> W : 403 + challengeId
+  U -> W : ввести код
+  W -> G : POST /auth/step-up {challengeId, code}
+  G -> I : проверить код
+  I --> G : stepUpToken (60 с)
+  G --> W : stepUpToken
+  W -> G : POST /lots/{id}/bids\nX-Step-Up-Token
+  G -> B : PlaceBid + токен
+  activate B
+  B -> I : проверить токен
+  I --> B : токен действителен
+end
+B -> B : серверная отметка времени
+B ->> Q1 : BidPlaced
+B --> G : 202 Accepted
+deactivate B
+G --> W : ставка принята к обработке
+Q1 ->> T : BidPlaced
+activate T
+T -> T : проверка по правилам\nлота, запись в журнал
+T ->> S : BidAccepted (через очередь)
+deactivate T
+S -->> W : WebSocket: bid.accepted
+W --> U : «Вы лидируете»
+@enduml

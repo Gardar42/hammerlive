@@ -14,9 +14,10 @@ actor "Участник торгов" as U
 actor "Организатор" as O
 actor "Аукционист" as AU
 actor "Модератор" as M
+actor "Telegram" as T
 actor "Платёжный\nпровайдер" as P
 G <|-- U
-rectangle "ИС HammerLive" {
+rectangle "ИС HammerLive (версия 1.1)" {
   usecase "Просмотреть каталог\nи календарь аукционов" as UC1
   usecase "Зарегистрироваться" as UC2
   usecase "Зарегистрироваться\nна аукцион" as UC3
@@ -30,6 +31,9 @@ rectangle "ИС HammerLive" {
   usecase "Провести торги" as UC11
   usecase "Запустить\nвидеотрансляцию" as UC12
   usecase "Зафиксировать\nставку из зала" as UC18
+  usecase "**Подтвердить ставку**\n**одноразовым кодом**" as UC15
+  usecase "**Оставить заочную**\n**ставку**" as UC16
+  usecase "**Подключить**\n**Telegram-уведомления**" as UC17
   usecase "Модерировать лоты" as UC13
   usecase "Разрешить спор" as UC14
 }
@@ -40,6 +44,8 @@ U --> UC5
 U --> UC7
 U --> UC8
 U --> UC9
+U --> UC16
+U --> UC17
 O --> UC10
 AU --> UC11
 AU --> UC18
@@ -47,7 +53,10 @@ M --> UC13
 M --> UC14
 UC3 ..> UC4 : <<include>>
 UC6 ..> UC5 : <<extend>>
+UC15 ..> UC5 : <<extend>>\n[сумма > порога]
+UC16 ..> UC4 : <<include>>
 UC11 ..> UC12 : <<include>>
 UC4 --> P
 UC8 --> P
+UC17 --> T
 @enduml
